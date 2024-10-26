@@ -72,8 +72,8 @@ class TikTokBot:
         password_input.send_keys(os.getenv('password'), Keys.ENTER)
         time.sleep(30)
 
-        # self.solver.solve_captcha_if_present()
-        # time.sleep(10)
+        self.solver.solve_captcha_if_present()
+        time.sleep(10)
 
     def find_chat(self, target_username="dragneel"):
         """Находит нужный чат с заданным именем пользователя."""
